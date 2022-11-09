@@ -1,0 +1,11 @@
+package tema_4_prog;
+
+public class Ej3 {
+	public static void main(String[] args) {
+		/*
+		 * Programa que lea una frase y una palabra y que nos diga la posición de dicha
+		 * palabra en la frase y si no la encuentra devuelva un cero.
+		 */
+		
+	}
+}

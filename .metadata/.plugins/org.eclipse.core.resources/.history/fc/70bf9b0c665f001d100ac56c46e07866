@@ -1,0 +1,30 @@
+package tema_4_prog;
+
+import java.util.Scanner;
+
+public class Ej10 {
+	/*
+	 * Programa que lea códigos de personas de 8 caracteres de modo que los cuatro
+	 * primeros sean numéricos y contenidos entre 1990-1995 (un año), el quinto
+	 * carácter sea solo (H ó M) sexo, el sexto un número que representa el curso 1
+	 * ó 2 y los caracteres séptimo y octavo pueden tener cualquier valor. Rechazar
+	 * los códigos que no cumplan estas condiciones. La finalización de entrada de
+	 * códigos se produce cuando se introduce el código “00000000”.
+	 */
+	public static void main(String[] arg) {
+		Scanner teclado = new Scanner(System.in);
+		String codigo, acabar = "00000000";
+
+		do {
+			System.out.print("Introduce un codigo");
+			codigo = teclado.next();
+			if (codigo.length() == 8) {
+				String año = codigo.substring(0, 4);
+				System.out.println(año);
+
+			} else {
+				System.out.println("El codigo no es valido");
+			}
+		} while (codigo != acabar);
+	}
+}
