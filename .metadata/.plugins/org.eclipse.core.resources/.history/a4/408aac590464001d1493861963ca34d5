@@ -1,0 +1,25 @@
+package tema_4_prog_p2;
+
+import java.util.Scanner;
+
+public class Ej1 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		String frase;
+		int suma = 0;
+		char temp, letra;
+		System.out.print("Introduce una frase: ");
+		frase = teclado.next();
+		System.out.print("Introduce una letra: ");
+		letra = teclado.next().charAt(0);
+		for (int i = 0; i < frase.length(); i++) {
+
+			temp = frase.charAt(i);
+			if (temp == letra)
+				suma++;
+		}
+
+		System.out.println("i appears " + suma + " times in exampleString");
+	teclado.close();
+	}
+}

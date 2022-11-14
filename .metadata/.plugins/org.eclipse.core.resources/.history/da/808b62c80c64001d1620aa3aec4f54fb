@@ -1,0 +1,39 @@
+package tema_4_prog_p1;
+
+import java.util.Scanner;
+
+public class Ej11 {
+	/*
+	 * Programa que lee una frase (máximo 60 caracteres) y diga cuántas letras
+	 * distintas tiene y la frecuencia de las mismas, para homogeneizar el conjunto
+	 * de letras debemos trabajar solo con mayúsculas. Indica cuáles son los
+	 * ficheros de entrada y salida del compilador.
+	 */
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		String frase;
+		int distintas = 0;
+		System.out.print("Introduce una frase: ");
+		frase = teclado.nextLine().toUpperCase();
+		for (int i = 0; i < frase.length(); i++) {
+			char letra = frase.charAt(i);
+			boolean nueva = true;
+			// Determino si la letra es distinta
+			for (int j = 0; j < i; j++) {
+				if (letra == frase.charAt(j)) {
+					nueva = false;
+				}
+				if (nueva) {
+					distintas++;
+					int contador = 1;
+					for (int k = i + 1; j < frase.length(); j++) {
+						contador++;
+						System.out.println("La frecuenca de " + letra + " es: " + (float) contador / frase.length());
+					}
+				}
+			}System.out.println("El numero de letras destintas es " + distintas);
+			
+		}
+		teclado.close();
+	}
+}

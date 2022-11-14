@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;tema_4_prog&apos; to &apos;tema_4_prog_p1&apos;&#x0D;&#x0A;- Original project: &apos;tema_4_prog&apos;&#x0D;&#x0A;- Original element: &apos;tema_4_prog/src/tema_4_prog&apos;&#x0D;&#x0A;- Renamed element: &apos;tema_4_prog/src/tema_4_prog_p1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;tema_4_prog&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;tema_4_prog" name="tema_4_prog_p1" qualified="false" references="true" stamp="1668417544211" textual="false" version="1.0"/>
+</session>
