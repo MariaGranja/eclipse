@@ -15,7 +15,7 @@ public class Ej11 {
 		char letra;
 		int veces = 0, diferente = 0;
 		System.out.print("Escriba una frase: ");
-		frase = teclado.nextLine().toUpperCase();
+		frase = teclado.nextLine().toUpperCase().replace(" ", "");
 		for (int i = 0; i < frase.length(); i++) {
 			letra = frase.charAt(i);
 			boolean nueva = true;
@@ -29,13 +29,11 @@ public class Ej11 {
 					if (letra == frase.charAt(j)) {
 						veces++;
 					}
-
 				}
 				System.out.println("La frecuenca de la letra " + letra + " es: " + (float) veces / frase.length());
 			}
 		}
-		System.out.println(diferente);
-
+		System.out.println("Hay " + diferente + " letras diferentes");
 		teclado.close();
 	}
 }
