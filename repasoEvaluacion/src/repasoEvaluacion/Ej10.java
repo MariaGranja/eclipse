@@ -15,9 +15,9 @@ public class Ej10 {
 		hora = teclado.nextLine();
 		horas = Integer.parseInt(hora.substring(0, 2));
 		minutos = Integer.parseInt(hora.substring(3, 5));
-		horas = 24 - horas;
+		horas = 23 - horas;
 		minutos = 60 - minutos;
-		segundos = (horas * 60) + (minutos * 120);
+		segundos = (horas * 3600) + (minutos * 60);
 		System.out.println("Quedan " + segundos + " segundos para medianoche.");
 		teclado.close();
 	}

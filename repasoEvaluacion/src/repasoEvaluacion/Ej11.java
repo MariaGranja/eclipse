@@ -15,15 +15,24 @@ public class Ej11 {
 	 */
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		String dia;
-		int personas, precio;
+		String dia, tarjeta;
+		int personas;
+		double precio;
+		System.out.print("Tarjeta cinePas: ");
+		tarjeta = teclado.nextLine().toLowerCase();
 		System.out.print("Introduce el dia de la semana: ");
 		dia = teclado.nextLine().toLowerCase();
 		System.out.print("Introduce el numero de personas: ");
 		personas = teclado.nextInt();
-		
+
 		if (dia.equals("miercoles")) {
 			precio = personas * 5;
+			if (tarjeta.equals("si")) {
+				precio = precio * 0.90;
+				System.out.println("Se ha aplicado descuento");
+			} else
+				System.out.println("No se aplica descuento");
+
 		} else if (dia.equals("jueves")) {
 			int pareja = personas % 2;
 			if (pareja == 0) {
@@ -33,8 +42,18 @@ public class Ej11 {
 				personas = personas / 2;
 				precio = personas * 11 + 8;
 			}
+			if (tarjeta.equals("si")) {
+				precio = precio * 0.90;
+				System.out.println("Se ha aplicado descuento");
+			} else
+				System.out.println("No se aplica descuento");
 		} else {
 			precio = personas * 8;
+			if(tarjeta.equals("si")) {
+				precio=precio*0.90;
+				System.out.println("Se ha aplicado descuento");
+			}else
+				System.out.println("No se aplica descuento");
 		}
 
 		System.out.println("El precio final es de " + precio + " euros.");
