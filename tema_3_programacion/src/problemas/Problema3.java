@@ -14,15 +14,16 @@ public class Problema3 {
 		num = teclado.nextInt();
 		if (num <= 3) {
 			System.out.println("El numero " + num + " no tiene divisores propios");
-		}
-		while (num != i && num > i) {
-			resto = num % i;
-			resultado = num / i;
-			if (resto == 0) {
-				System.out.println(num + "/" + i + "=" + resultado);
-				System.out.println("El numero " + i + " es un divisor propio");
+		} else {
+			while (num != i && num > i) {
+				resto = num % i;
+				resultado = num / i;
+				if (resto == 0) {
+					System.out.println(num + "/" + i + "=" + resultado);
+					System.out.println("El numero " + i + " es un divisor propio");
+				}
+				i++;
 			}
-			i++;
 		}
 		teclado.close();
 	}
