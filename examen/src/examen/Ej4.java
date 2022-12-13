@@ -62,7 +62,8 @@ public class Ej4 {
 			if (devolver >= 1) {
 				System.out.println("Devuelve " + (devolver / 1) + " monedas de 1");
 			}
-			System.out.println("Y "+(int)((pagado-total)*100)+" centimos");
+			System.out.println("Y " + (int) ((pagado - total) * 100) + " centimos");
 		}
+		teclado.close();
 	}
 }

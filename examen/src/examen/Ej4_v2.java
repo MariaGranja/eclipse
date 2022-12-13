@@ -28,5 +28,6 @@ public class Ej4_v2 {
 				System.out.println("Error");
 			}
 		} while (pago < total);
+		teclado.close();
 	}
 }
