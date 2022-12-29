@@ -16,12 +16,12 @@ public class Ej1 {
 		teclado.close();
 	}
 
-	private static boolean esPrimo(int numero) {
+	public static boolean esPrimo(int numero) {
 		int contador = 2;
 		boolean primo;
 		primo = true;
-		while (primo && contador > numero) {
-			primo = numero % contador++ != 0;
+		while (primo && contador < numero) {
+			primo = numero % contador != 0;
 			contador++;
 		}
 		return primo;

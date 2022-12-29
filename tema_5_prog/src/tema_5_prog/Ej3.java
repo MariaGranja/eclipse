@@ -22,7 +22,7 @@ public class Ej3 {
 		teclado.close();
 	}
 
-	private static int factorial(int numero) {
+	public static int factorial(int numero) {
 		int resultado = 1;
 		for (int i = numero; i > 0; i--) {
 			resultado *= i;
